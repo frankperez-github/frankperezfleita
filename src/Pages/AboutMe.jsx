@@ -6,6 +6,7 @@ import { Navigation } from "swiper";
 import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
+
 function AboutMe() {
     return(
         <div className="AboutMe">
@@ -35,6 +36,7 @@ function AboutMe() {
                     
                     <SwiperSlide>
                         <ProjectPreview 
+                        projectImage = "projectImg.png"
                         projectName="El Encanto Liquidation"
                         projectLink="https://elencantoliquidation.com"
                         />
@@ -50,6 +52,24 @@ function AboutMe() {
 
             <div className="ContactPreview">
                 <Title title="Contact"/>
+
+                <div className="contactIcons">
+                    <a href="" className="contactIcon">
+                        <img height="100%" width="100%" src="LinkedIn.png" alt="" />
+                    </a>
+                    <a href="" className="contactIcon">
+                        <img height="100%" width="100%" src="Github.png" alt="" />
+                    </a>
+                    <a href="" className="contactIcon">
+                        <img height="100%" width="100%" src="WhatsApp.png" alt="" />
+                    </a>
+                    <a href="" className="contactIcon">
+                        <img height="100%" width="100%" src="Mail.png" alt="" />
+                    </a>
+                    <a href="" className="contactIcon">
+                        <img height="100%" width="100%" src="Telegram.png" alt="" />
+                    </a>
+                </div>
             </div>
 
         </div>

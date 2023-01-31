@@ -55,6 +55,7 @@
 }
 .titleComponent
 {
+  padding-top: 10%;
   padding-left: 10%;
   display: flex;
   align-items: center;
@@ -102,6 +103,29 @@
   margin-left: 15%;
   width: 70%;
 }
+.projectName p
+{
+  margin-bottom: 5%;
+}
+.projectImage
+{
+  width: 100%;
+  margin: 4% 0%;
+}
+
+.contactIcons
+{
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  padding-bottom: 15%;
+}
+.contactIcon
+{
+  width: 12%;
+  height: 12%;
+  padding-right: 3%;
+}
 
 .siteButton
 {
@@ -110,8 +134,5 @@
   background-color: rgba(255, 255, 255, 0);
   padding: 2%;
   border-radius: 2em;
-}
-.projectImage
-{
-
+  cursor: pointer;
 }

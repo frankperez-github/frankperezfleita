@@ -1,9 +1,9 @@
-function ProjectPreview({imagePath, projectName, projectLink})
+function ProjectPreview({projectImage, projectName, projectLink})
 {
     return(
         <div className="ProjectPreview">
             <div className="projectImage">
-                <img src="projectImg.png" alt="project image" height="100%" width="100%"/>
+                <img src={projectImage} alt="project image" height="100%" width="100%"/>
             </div>
 
             <div className="projectFoot">

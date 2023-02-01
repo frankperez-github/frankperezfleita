@@ -8,7 +8,7 @@ function ProjectPreview({projectImage, projectName, projectLink})
 
             <div className="projectFoot">
                 <div className="projectname">
-                    <p>{projectName}</p>
+                    <h2>{projectName}</h2>
                     <a className="projectLink" href={projectLink}>{projectLink}</a>
                 </div>
                 <button className="siteButton">Ver detalles</button>

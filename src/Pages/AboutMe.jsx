@@ -19,8 +19,8 @@ function AboutMe({projects}) {
                     viverra semper libero. Suspendisse congue a elit et porttitor. Aenean vestibulum, nisi vitae pulvinar suscipit, dolor eros bibendum sem,
                     quis viverra tellus mi non purus. Donec in erat orci. Proin sodales est at sem placerat accumsan. Sed nec nibh volutpat, elementum ligula sit amet, pharetra nisl. 
                     Nulla varius aliquet augue, ut consectetur nunc tempor eget.
-                    <br/>
-                    <br/>
+                </Text>
+                <Text>
                     Maecenas varius, nunc nec varius viverra, neque risus eleifend tortor, in sollicitudin ante nibh sit amet turpis. Sed vitae tortor mollis,
                     finibus velit sed, mattis massa. Vestibulum fermentum, est scelerisque mollis rutrum, felis mi commodo quam, eu fermentum magna dui sit amet mauris. 
                     Curabitur sed lorem id nunc varius suscipit vitae et tortor. Nam et justo lorem. Quisque cursus venenatis eros, nec placerat dui lobortis in. Nullam scelerisque blandit purus pulvinar fringilla. 

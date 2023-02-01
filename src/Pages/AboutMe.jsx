@@ -34,8 +34,7 @@ function AboutMe({projects}) {
                 <Title title="Projects"/>
                     
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                    {projects.map((project)=>
-                    (
+                    {Array.prototype.forEach.call(projects, (project) => {
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 
                             projectImage={project.Image}
@@ -43,7 +42,7 @@ function AboutMe({projects}) {
                             projectLink = {project.Link}
                             />
                         </SwiperSlide>
-                    ))}
+                    })}
                 </Swiper>
                 
             </div>

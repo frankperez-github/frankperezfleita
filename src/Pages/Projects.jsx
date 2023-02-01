@@ -13,7 +13,7 @@ function Projects({projects})
             <Title title="Projects"/>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 
-                {projects.map((project)=>
+                {projects.map ((project)=>
                 (
                     <SwiperSlide key={project.id}>
                         <ProjectPreview 
@@ -22,7 +22,7 @@ function Projects({projects})
                         projectLink = {project.Link}
                         />
 
-                        {project.Description.map(text => (
+                        {project.Description.map((text) => (
                             <Text key={text}>
                                 {text}
                             </Text> 

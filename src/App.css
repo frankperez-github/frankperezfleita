@@ -17,13 +17,6 @@
   width: 12%;
 
 }
-.selected
-{
-  text-decoration: underline;
-  text-decoration-color: #80C8E1;
-  text-decoration-thickness: 5px;
-  text-decoration-style: solid;
-}
 .nameAndTitle
 {
   margin-top: -1%;
@@ -46,7 +39,15 @@
 }
 .navbar-item
 {
+  text-decoration: none;
   color: white;
+}
+.selected
+{
+  text-decoration: underline;
+  text-decoration-color: #80C8E1;
+  text-decoration-thickness: 5px;
+  text-decoration-style: solid;
 }
 
 .title
@@ -72,19 +73,15 @@
   width: 5%;
 }
 
-.AboutMe
+.blackBack
 {
-  margin: 0;
-  padding: 0;
   color: white;
   background-color: black;
-  min-height: 100%;
 }
 
 .Text
 {
   margin: 0 10% 0 15%;
-  padding-bottom: 8%;
 }
 
 .projectLink
@@ -135,4 +132,15 @@
   padding: 2%;
   border-radius: 2em;
   cursor: pointer;
+}
+
+.projDescr
+{
+  margin: 10% 15%
+}
+
+.projectDetailsImage
+{
+  width: 80%;
+  margin: 5% 10%;
 }

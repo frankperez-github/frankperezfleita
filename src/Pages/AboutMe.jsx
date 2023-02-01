@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -7,9 +6,11 @@ import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
 
-function AboutMe() {
+function AboutMe({projects}) {
+    
+
     return(
-        <div className="AboutMe">
+        <div className="blackBack">
             <div className="Information">
                 <Title title="Hey there!"/>
 
@@ -33,19 +34,16 @@ function AboutMe() {
                 <Title title="Projects"/>
                     
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                    
-                    <SwiperSlide>
-                        <ProjectPreview 
-                        projectImage = "projectImg.png"
-                        projectName="El Encanto Liquidation"
-                        projectLink="https://elencantoliquidation.com"
-                        />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        Slide 2
-                    </SwiperSlide>
-
+                    {projects.map((project)=>
+                    (
+                        <SwiperSlide key={project.id}>
+                            <ProjectPreview 
+                            projectImage={project.Image}
+                            projectName = {project.Name}
+                            projectLink = {project.Link}
+                            />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
                 
             </div>
@@ -57,16 +55,16 @@ function AboutMe() {
                     <a href="" className="contactIcon">
                         <img height="100%" width="100%" src="LinkedIn.png" alt="" />
                     </a>
-                    <a href="" className="contactIcon">
+                    <a href="https://github.com/frankperez-github" className="contactIcon">
                         <img height="100%" width="100%" src="Github.png" alt="" />
                     </a>
-                    <a href="" className="contactIcon">
+                    <a href="https://wa.me/+5353103058" className="contactIcon">
                         <img height="100%" width="100%" src="WhatsApp.png" alt="" />
                     </a>
-                    <a href="" className="contactIcon">
+                    <a href="mailto:fp848584@gmail.com" className="contactIcon">
                         <img height="100%" width="100%" src="Mail.png" alt="" />
                     </a>
-                    <a href="" className="contactIcon">
+                    <a href="https://t.me/frankperez24" className="contactIcon">
                         <img height="100%" width="100%" src="Telegram.png" alt="" />
                     </a>
                 </div>

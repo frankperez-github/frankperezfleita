@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
-// import AboutMe from './pages/AboutMe.jsx'
+import AboutMe from './pages/AboutMe.jsx'
 import Projects from './pages/Projects.jsx'
 
 
@@ -59,7 +59,7 @@ function App() {
       <div className="App">
         <Routes>
        
-          {/* <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} /> */}
+          <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} />
        
           <Route key="projects" exact path='/Projects'  element={<Projects projects={projects}/>}/>
        

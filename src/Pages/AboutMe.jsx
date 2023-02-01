@@ -7,7 +7,6 @@ import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
 
 function AboutMe({projects}) {
-    
 
     return(
         <div className="blackBack">
@@ -34,7 +33,7 @@ function AboutMe({projects}) {
                 <Title title="Projects"/>
                     
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                    {Array.prototype.forEach.call(projects, (project) => {
+                    {projects.map((project) => (
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 
                             projectImage={project.Image}
@@ -42,7 +41,7 @@ function AboutMe({projects}) {
                             projectLink = {project.Link}
                             />
                         </SwiperSlide>
-                    })}
+                    ))}
                 </Swiper>
                 
             </div>

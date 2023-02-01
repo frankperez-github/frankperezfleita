@@ -4,7 +4,7 @@ function Text(props)
         <div className="Text">
             <br/>
             <br/>
-            {props.children}
+            <p>{props.children}</p>
         </div>
     );
 }

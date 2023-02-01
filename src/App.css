@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
 *
 {
   margin: 0;
   padding: 0;
-  font-family: Source;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .headerInfo
@@ -131,7 +135,7 @@
   border-color: #80C8E1;
   background-color: rgba(255, 255, 255, 0);
   padding: 2%;
-  border-radius: 2em;
+  border-radius: 3em;
   cursor: pointer;
 }
 
@@ -144,4 +148,49 @@
 {
   width: 80%;
   margin: 5% 10%;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  h1{
+    font-size: 30px;
+  }
+  h2
+  {
+    font-size: 25px;
+  }
+  h3
+  {
+    font-size: 22px;
+  }
+  p,a
+  {
+    font-size: 16px;
+  }
+  button
+  {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1{
+    font-size: 25px;
+  }
+  h2
+  {
+    font-size: 20px;
+  }
+  h3
+  {
+    font-size: 17px;
+  }
+  p,a
+  {
+    font-size: 11px;
+  }
+  button
+  {
+    font-size: 9px;
+  }
 }

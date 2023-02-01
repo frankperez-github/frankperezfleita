@@ -5,7 +5,7 @@ function Title({title}) {
                 <img src="/arrow.png" alt="arrow" height="100%" width="100%"/>
             </div>
             <div className="title">
-                <p className="titleText">{title}</p>
+                <h2 className="titleText">{title}</h2>
             </div>
         </div>
     );

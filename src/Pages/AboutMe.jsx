@@ -14,17 +14,39 @@ function AboutMe({projects}) {
                 <Title title="Hey there!"/>
 
                 <Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce metus diam, pulvinar quis massa ac, 
-                    viverra semper libero. Suspendisse congue a elit et porttitor. Aenean vestibulum, nisi vitae pulvinar suscipit, dolor eros bibendum sem,
-                    quis viverra tellus mi non purus. Donec in erat orci. Proin sodales est at sem placerat accumsan. Sed nec nibh volutpat, elementum ligula sit amet, pharetra nisl. 
-                    Nulla varius aliquet augue, ut consectetur nunc tempor eget.
+                    My name is Frank Pérez Fleita and I am {new Date().getFullYear() - 2002} years old.
+                    <br/>
+                    I study Computer Science in University of Havana.  My mother tongue is Spanish, but I speak English too.
+                    <br/>
+                    My career as a Web Developer started {new Date().getFullYear() - 2020} years ago  and nowadays I have experience using:
+                    <br/>
+                    <br/>
+                    <ul>
+                        <li>
+                            * ReactJS
+                        </li>
+                        <li>
+                            * NextJS
+                        </li>
+                        <li>
+                            * Git & Github
+                        </li>
+                        <li>
+                            * FireBase
+                        </li>
+                        <li>
+                            * Otras cosillas
+                        </li>
+                    </ul>
                 </Text>
                 <Text>
-                    Maecenas varius, nunc nec varius viverra, neque risus eleifend tortor, in sollicitudin ante nibh sit amet turpis. Sed vitae tortor mollis,
-                    finibus velit sed, mattis massa. Vestibulum fermentum, est scelerisque mollis rutrum, felis mi commodo quam, eu fermentum magna dui sit amet mauris. 
-                    Curabitur sed lorem id nunc varius suscipit vitae et tortor. Nam et justo lorem. Quisque cursus venenatis eros, nec placerat dui lobortis in. Nullam scelerisque blandit purus pulvinar fringilla. 
-                    In hac habitasse platea dictumst. Integer dignissim feugiat ullamcorper. Quisque eget facilisis sem, nec tincidunt urna. Proin vel ullamcorper lorem, non tempus augue. Morbi rhoncus sit amet felis vel congue. 
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    I have experience with .NET and C# too and have developed school projects 
+                    like Search Engines and 2D Games with that language using Razor and Godot respectively. 
+                </Text>
+                <Text>
+                    Last year I took CS50's Introduction to Computer Science course, you can see the cetificate in Certificates section.
+                    <br/>
+                    And since 2020 I have been working as a freelance developer, you can see some of my previous work on Projects section.
                 </Text>
             </div>
             
@@ -50,7 +72,7 @@ function AboutMe({projects}) {
                 <Title title="Contact"/>
 
                 <div className="contactIcons">
-                    <a href="" className="contactIcon">
+                    <a href="https://www.linkedin.com/in/frank-p%C3%A9rez-fleita-480153212/" className="contactIcon">
                         <img height="100%" width="100%" src="LinkedIn.png" alt="" />
                     </a>
                     <a href="https://github.com/frankperez-github" className="contactIcon">

@@ -27,8 +27,8 @@ function Header(props)
                     <a onClick={changeSelected('Projects')} id='Projects' href='/Projects' className="navbar-item">
                         Projects
                     </a>
-                    <a onClick={changeSelected('Contact')} id='Contact' href='/Contact' className="navbar-item">
-                        Contact
+                    <a onClick={changeSelected('Certificates')} id='Certificates' href='/Certificates' className="navbar-item">
+                        Certificates
                     </a>
                 </div>
             </header>

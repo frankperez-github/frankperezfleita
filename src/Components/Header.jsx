@@ -1,47 +1,41 @@
-import { Link, BrowserRouter as Router} from "react-router-dom";
-
-function Header(props)
+function Header({route, changeRoute})
 {
-    function changeSelected(e)
+    function handleSelection(e)
     {
-        var element = document.getElementById(e);
-        console.log(element);
+        changeRoute(e);
     }
-    
     return(
-        <div className="Header">
 
-            <header>
-                <div className="headerInfo">
-                    <div className="headerImage">
-                        <img src="/logo.jpg" alt="logo" width="100%"
-                        height="100%"/>
-                    </div>
-
-                    <div className="nameAndTitle">
-                        <h1>Frank Pérez Fleita</h1>
-                        <p>/ web developer</p>
-                    </div>
+        <header>
+            <div className="headerInfo">
+                <div className="headerImage">
+                    <img src="/logo.jpg" alt="logo" width="100%"
+                    height="100%"/>
                 </div>
 
-                <div className="navBar">
-                        <Link to='/' onClick={changeSelected('About me')} id='About me'  className="navbar-item selected">
-                            About me
-                        </Link>
-                        <Link to='/Projects' onClick={changeSelected('Projects')} id='Projects' className="navbar-item">
-                            Projects
-                        </Link>
-                        <Link to='/Certificates' onClick={changeSelected('Certificates')} id='Certificates' className="navbar-item">
-                            Certificates
-                        </Link>
+                <div className="nameAndTitle">
+                    <h1>Frank Pérez Fleita</h1>
+                    <p>/ web developer</p>
                 </div>
-            </header>
+            </div>
 
-            <main>
-                {props.children}
-            </main>
+            <div className="navBar">
 
-        </div>
+                <button onClick={()=>handleSelection("About")} className={route=="About" && "selected"}>
+                    About me
+                </button>
+
+                <button onClick={()=>handleSelection("Projects")} className={route=="Projects" && "selected"}>
+                    Projects
+                </button>
+
+                <button onClick={()=>handleSelection("Certificates")} className={route=="Certificates" && "selected"}>
+                    Certificates
+                </button>
+
+            </div>
+        </header>
+
     );
 }
 export default Header;

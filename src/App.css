@@ -8,6 +8,12 @@
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 .skills
 {
   display: flex;
@@ -182,7 +188,7 @@
   {
     font-size: 22px;
   }
-  p,a
+  p, a, button
   {
     font-size: 16px;
   }
@@ -204,7 +210,7 @@
   {
     font-size: 17px;
   }
-  p,a
+  p, a, button
   {
     font-size: 11px;
   }

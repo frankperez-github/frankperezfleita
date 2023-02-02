@@ -1,10 +1,19 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Header from './Components/Header';
 import AboutMe from './pages/AboutMe.jsx'
 import Projects from './pages/Projects.jsx'
 
 
 function App() {
+  const [route, setRoute] = useState("About");
+
+  const changeRoute = (route) =>{
+
+    setRoute(route);
+  
+  }
+
   const projects = [
     {
       id: 1,
@@ -95,13 +104,15 @@ function App() {
   ] 
 
   return (
-    <Router>
-        <Routes>
-            <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} />
-        
-            <Route key="projects" path='/Projects'  element={<Projects projects={projects}/>}/>
-        </Routes>
-    </Router>
+    <div>
+        <Header route={route}changeRoute={changeRoute}/>
+        {
+         route=="About" && <AboutMe id="AboutComponent"projects={projects}/>
+        }
+        {
+          route=="Projects" && <Projects id="ProjectsComponent" projects={projects}/>
+        }
+    </div>
   );
 }
 

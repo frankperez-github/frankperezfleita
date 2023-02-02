@@ -21,15 +21,15 @@ function Header({route, changeRoute})
 
             <div className="navBar">
 
-                <button onClick={()=>handleSelection("About")} className={route=="About" && "selected"}>
+                <button onClick={()=>handleSelection("About")} className={route=="About" ? "navbar-item selected" : "navbar-item"}>
                     About me
                 </button>
 
-                <button onClick={()=>handleSelection("Projects")} className={route=="Projects" && "selected"}>
+                <button onClick={()=>handleSelection("Projects")} className={route=="Projects" ? "navbar-item selected" : "navbar-item"}>
                     Projects
                 </button>
 
-                <button onClick={()=>handleSelection("Certificates")} className={route=="Certificates" && "selected"}>
+                <button onClick={()=>handleSelection("Certificates")} className={route=="Certificates" ? "navbar-item selected" : "navbar-item"}>
                     Certificates
                 </button>
 

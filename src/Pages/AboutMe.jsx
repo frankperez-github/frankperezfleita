@@ -24,21 +24,20 @@ function AboutMe({projects}) {
                         My career as a Web Developer started {new Date().getFullYear() - 2020} years ago  and nowadays I have experience using:
                     </Text>
                         <br/>
-                        <br/>
-                        <div className="Text">
-                            <p>
+                        <div className="Text skills">
+                            <p className="skill">
                                 * ReactJS
                             </p>
-                            <p>
+                            <p className="skill">
                                 * NextJS
                             </p>
-                            <p>
+                            <p className="skill">
                                 * Git & Github
                             </p>
-                            <p>
+                            <p className="skill">
                                 * FireBase
                             </p>
-                            <p>
+                            <p className="skill">
                                 * Otras cosillas
                             </p>
                         </div>

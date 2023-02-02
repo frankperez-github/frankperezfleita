@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
@@ -54,7 +54,7 @@ function AboutMe({projects}) {
 
                 <Title title="Projects"/>
                     
-                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 

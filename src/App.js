@@ -8,7 +8,7 @@ function App() {
   const projects = [
     {
       id: 1,
-      Image: "projectImg.png",
+      Image: "elencantoImages/main.png",
       Name: "El Encanto Liquidation",
       Link: "https://elencantoliquidation.com",
       
@@ -19,19 +19,16 @@ function App() {
 
       Images:[
         { id:1,
-          path:"projectImg.png"
+          path:"elencantoImages/main.png"
         },
         { id:2,
-          path:"img2.png"
-        },
-        { id:3,
-          path:"img3.png"
-        },
+          path:"elencantoImages/main.png"
+        }
       ]
     },
     {
         id: 2,
-        Image: "projectImg.png",
+        Image: "enfasismagImages/main.png",
         Name: "Énfasis Magazine",
         Link: "https://enfasismag.com",
         
@@ -41,17 +38,62 @@ function App() {
 
         Images:[
           { id:1,
-            path:"projectImg.png"
+            path:"enfasismagImages/main.png"
           },
           { id:2,
-            path:"projectImg.png"
+            path:"enfasismagImages/main.png"
           },
           { id:3,
-            path:"projectImg.png"
+            path:"enfasismagImages/main.png"
           },
         ]
+    },
+    {
+      id: 3,
+      Image: "connectravelImages/main.png",
+      Name: "Connect Travel",
+      Link: "https://connectravel.us",
+      
+      Description:[
+        "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
+      ],
+
+      Images:[
+        { id:1,
+          path:"connectravelImages/main.png"
+        },
+        { id:2,
+          path:"connectravelImages/main.png"
+        },
+        { id:3,
+          path:"connectravelImages/main.png"
+        },
+      ]
+    },
+    {
+    id: 4,
+    Image: "seahorseImages/main.png",
+    Name: "Sea Horse Jet Ski",
+    Link: "https://seahorse-jetski.vercel.app",
+    
+    Description:[
+      "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
+    ],
+
+    Images:[
+      { id:1,
+        path:"seahorseImages/main.png"
+      },
+      { id:2,
+        path:"seahorseImages/main.png"
+      },
+      { id:3,
+        path:"seahorseImages/main.png"
+      },
+    ]
     }
-] 
+  ] 
+  
   return (
     <Router>
       <div className="App">

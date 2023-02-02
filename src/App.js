@@ -93,18 +93,14 @@ function App() {
     ]
     }
   ] 
-  
+
   return (
     <Router>
-      <div className="App">
         <Routes>
-       
-          <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} />
-       
-          <Route key="projects" path='/Projects'  element={<Projects projects={projects}/>}/>
-       
+            <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} />
+        
+            <Route key="projects" path='/Projects'  element={<Projects projects={projects}/>}/>
         </Routes>
-      </div>
     </Router>
   );
 }

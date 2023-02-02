@@ -5,92 +5,95 @@ import { Navigation, Autoplay } from "swiper";
 import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
+import Header from "../Components/Header.jsx";
 
 function AboutMe({projects}) {
 
     return(
-        <div className="blackBack">
-            <div className="Information">
-                <Title title="Hey there!"/>
+        <Header>
 
-                <Text>
-                    My name is Frank Pérez Fleita and I am {new Date().getFullYear() - 2002} years old.
-                    <br/>
-                    I study Computer Science in University of Havana.  My mother tongue is Spanish, but I speak English too.
-                    <br/>
-                    My career as a Web Developer started {new Date().getFullYear() - 2020} years ago  and nowadays I have experience using:
-                    <br/>
-                    <br/>
-                    <ul>
-                        <li>
-                            * ReactJS
-                        </li>
-                        <li>
-                            * NextJS
-                        </li>
-                        <li>
-                            * Git & Github
-                        </li>
-                        <li>
-                            * FireBase
-                        </li>
-                        <li>
-                            * Otras cosillas
-                        </li>
-                    </ul>
-                </Text>
-                <Text>
-                    I have experience with .NET and C# too and have developed school projects 
-                    like Search Engines and 2D Games with that language using Razor and Godot respectively. 
-                </Text>
-                <Text>
-                    Last year I took CS50's Introduction to Computer Science course, you can see the cetificate in Certificates section.
-                    <br/>
-                    And since 2020 I have been working as a freelance developer, you can see some of my previous work on Projects section.
-                </Text>
-            </div>
-            
-            <div className="ProjectsPreview">
+            <div className="blackBack">
+                <div className="Information">
+                    <Title title="Hey there!"/>
 
-                <Title title="Projects"/>
-                    
-                <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
-                    {projects.map((project) => (
-                        <SwiperSlide key={project.id}>
-                            <ProjectPreview 
-                            projectImage={project.Image}
-                            projectName = {project.Name}
-                            projectLink = {project.Link}
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                
-            </div>
-
-            <div className="ContactPreview">
-                <Title title="Contact"/>
-
-                <div className="contactIcons">
-                    <a href="https://www.linkedin.com/in/frank-p%C3%A9rez-fleita-480153212/" className="contactIcon">
-                        <img height="100%" width="100%" src="LinkedIn.png" alt="" />
-                    </a>
-                    <a href="https://github.com/frankperez-github" className="contactIcon">
-                        <img height="100%" width="100%" src="Github.png" alt="" />
-                    </a>
-                    <a href="https://wa.me/+5353103058" className="contactIcon">
-                        <img height="100%" width="100%" src="WhatsApp.png" alt="" />
-                    </a>
-                    <a href="mailto:fp848584@gmail.com" className="contactIcon">
-                        <img height="100%" width="100%" src="Mail.png" alt="" />
-                    </a>
-                    <a href="https://t.me/frankperez24" className="contactIcon">
-                        <img height="100%" width="100%" src="Telegram.png" alt="" />
-                    </a>
+                    <Text>
+                        My name is Frank Pérez Fleita and I am {new Date().getFullYear() - 2002} years old.
+                        <br/>
+                        I study Computer Science in University of Havana.  My mother tongue is Spanish, but I speak English too.
+                        <br/>
+                        My career as a Web Developer started {new Date().getFullYear() - 2020} years ago  and nowadays I have experience using:
+                    </Text>
+                        <br/>
+                        <ul className="Text">
+                            <li>
+                                * ReactJS
+                            </li>
+                            <li>
+                                * NextJS
+                            </li>
+                            <li>
+                                * Git & Github
+                            </li>
+                            <li>
+                                * FireBase
+                            </li>
+                            <li>
+                                * Otras cosillas
+                            </li>
+                        </ul>
+                    <Text>
+                        I have experience with .NET and C# too and have developed school projects 
+                        like Search Engines and 2D Games with that language using Razor and Godot respectively. 
+                    </Text>
+                    <Text>
+                        Last year I took CS50's Introduction to Computer Science course, you can see the cetificate in Certificates section.
+                        <br/>
+                        And since 2020 I have been working as a freelance developer, you can see some of my previous work on Projects section.
+                    </Text>
                 </div>
-            </div>
+                
+                <div className="ProjectsPreview">
 
-        </div>
+                    <Title title="Projects"/>
+                        
+                    <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
+                        {projects.map((project) => (
+                            <SwiperSlide key={project.id}>
+                                <ProjectPreview 
+                                projectImage={project.Image}
+                                projectName = {project.Name}
+                                projectLink = {project.Link}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    
+                </div>
+
+                <div className="ContactPreview">
+                    <Title title="Contact"/>
+
+                    <div className="contactIcons">
+                        <a href="https://www.linkedin.com/in/frank-p%C3%A9rez-fleita-480153212/" className="contactIcon">
+                            <img height="100%" width="100%" src="LinkedIn.png" alt="" />
+                        </a>
+                        <a href="https://github.com/frankperez-github" className="contactIcon">
+                            <img height="100%" width="100%" src="Github.png" alt="" />
+                        </a>
+                        <a href="https://wa.me/+5353103058" className="contactIcon">
+                            <img height="100%" width="100%" src="WhatsApp.png" alt="" />
+                        </a>
+                        <a href="mailto:fp848584@gmail.com" className="contactIcon">
+                            <img height="100%" width="100%" src="Mail.png" alt="" />
+                        </a>
+                        <a href="https://t.me/frankperez24" className="contactIcon">
+                            <img height="100%" width="100%" src="Telegram.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </Header>
 
 
       

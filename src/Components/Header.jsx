@@ -1,8 +1,12 @@
-import { Link, BrowserRouter as Router } from "react-router-dom";
-
+import { Link, BrowserRouter as Router} from "react-router-dom";
 
 function Header(props)
 {
+    function changeSelected(e)
+    {
+        var element = document.getElementById(e);
+        console.log(element);
+    }
     
     return(
         <div className="Header">
@@ -21,15 +25,15 @@ function Header(props)
                 </div>
 
                 <div className="navBar">
-                    <a onClick={changeSelected('About me')} id='About me' href='/' className="navbar-item selected">
-                        About me
-                    </a>
-                    <a onClick={changeSelected('Projects')} id='Projects' href='/Projects' className="navbar-item">
-                        Projects
-                    </a>
-                    <a onClick={changeSelected('Certificates')} id='Certificates' href='/Certificates' className="navbar-item">
-                        Certificates
-                    </a>
+                        <Link to='/' onClick={changeSelected('About me')} id='About me'  className="navbar-item selected">
+                            About me
+                        </Link>
+                        <Link to='/Projects' onClick={changeSelected('Projects')} id='Projects' className="navbar-item">
+                            Projects
+                        </Link>
+                        <Link to='/Certificates' onClick={changeSelected('Certificates')} id='Certificates' className="navbar-item">
+                            Certificates
+                        </Link>
                 </div>
             </header>
 
@@ -39,12 +43,5 @@ function Header(props)
 
         </div>
     );
-    function changeSelected(e)
-    {
-        
-        var element = document.getElementById(e);
-        console.log(element);
-    //    element.classList.toggle("selected");
-    }
 }
 export default Header;

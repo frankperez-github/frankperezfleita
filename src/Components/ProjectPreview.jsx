@@ -1,5 +1,5 @@
 
-function ProjectPreview({projectImage, projectName, projectLink})
+function ProjectPreview({changeRoute, projectImage, projectName, projectLink})
 {
     return(
         <div className="ProjectPreview">
@@ -12,9 +12,8 @@ function ProjectPreview({projectImage, projectName, projectLink})
                     <h3>{projectName}</h3>
                     <a className="projectLink" href={projectLink}>{projectLink}</a>
                 </div>
-                <a href="/Projects" id="ProjectDetails">
-                    <button className="siteButton">Ver detalles</button>
-                </a>
+                
+                <button onClick={()=>{changeRoute("Projects")}} className="siteButton">Ver detalles</button>
             </div>
         </div>
     );

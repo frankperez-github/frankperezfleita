@@ -107,7 +107,7 @@ function App() {
     <div>
         <Header route={route}changeRoute={changeRoute}/>
         {
-         route=="About" && <AboutMe id="AboutComponent"projects={projects}/>
+         route=="About" && <AboutMe id="AboutComponent" changeRoute={changeRoute}projects={projects}/>
         }
         {
           route=="Projects" && <Projects id="ProjectsComponent" projects={projects}/>

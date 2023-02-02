@@ -37,14 +37,6 @@
 {
   margin-top: -1%;
 }
-.nameAndTitle p
-{
-  margin: 0;
-}
-.nameAndTitle h1
-{
-  margin: 0;
-}
 
 .navBar
 {
@@ -53,17 +45,19 @@
   justify-content: space-around;
   background-color: black;
 }
-.navbar-item
-{
-  text-decoration: none;
+.navbar-item{
+  width: 35%;
+  background-color: black;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 .selected
 {
-  text-decoration: underline;
-  text-decoration-color: #80C8E1;
-  text-decoration-thickness: 5px;
-  text-decoration-style: solid;
+  padding: 1% 5%;
+  border-bottom: solid;
+  border-color: #80C8E1;
+  border-width: 5px;
 }
 
 .title
@@ -143,21 +137,15 @@
 {
   margin-top: 5%;
 }
-.navbar-item{
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+
 .siteButton
 {
   color: #80C8E1;
   border-color: #80C8E1;
   background-color: rgba(255, 255, 255, 0);
-  padding: 2%;
   border-radius: 3em;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
 }
 
 

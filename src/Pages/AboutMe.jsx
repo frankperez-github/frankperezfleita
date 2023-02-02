@@ -6,7 +6,7 @@ import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
 
-function AboutMe({projects}) {
+function AboutMe({changeRoute, projects}) {
 
     return(
 
@@ -58,6 +58,7 @@ function AboutMe({projects}) {
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 
+                            changeRoute={changeRoute}
                             projectImage={project.Image}
                             projectName = {project.Name}
                             projectLink = {project.Link}

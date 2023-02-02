@@ -24,23 +24,24 @@ function AboutMe({projects}) {
                         My career as a Web Developer started {new Date().getFullYear() - 2020} years ago  and nowadays I have experience using:
                     </Text>
                         <br/>
-                        <ul className="Text">
-                            <li>
+                        <br/>
+                        <div className="Text">
+                            <p>
                                 * ReactJS
-                            </li>
-                            <li>
+                            </p>
+                            <p>
                                 * NextJS
-                            </li>
-                            <li>
+                            </p>
+                            <p>
                                 * Git & Github
-                            </li>
-                            <li>
+                            </p>
+                            <p>
                                 * FireBase
-                            </li>
-                            <li>
+                            </p>
+                            <p>
                                 * Otras cosillas
-                            </li>
-                        </ul>
+                            </p>
+                        </div>
                     <Text>
                         I have experience with .NET and C# too and have developed school projects 
                         like Search Engines and 2D Games with that language using Razor and Godot respectively. 

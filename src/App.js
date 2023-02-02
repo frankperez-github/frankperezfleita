@@ -41,13 +41,13 @@ function App() {
 
         Images:[
           { id:1,
-            path:"img1.png"
+            path:"projectImg.png"
           },
           { id:2,
-            path:"img2.png"
+            path:"projectImg.png"
           },
           { id:3,
-            path:"img3.png"
+            path:"projectImg.png"
           },
         ]
     }
@@ -59,7 +59,7 @@ function App() {
        
           <Route key="index" exact path='/'  element={<AboutMe projects={projects}/>} />
        
-          <Route key="projects" exact path='/Projects'  element={<Projects projects={projects}/>}/>
+          <Route key="projects" path='/Projects'  element={<Projects projects={projects}/>}/>
        
         </Routes>
       </div>

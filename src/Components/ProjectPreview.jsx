@@ -1,3 +1,4 @@
+
 function ProjectPreview({projectImage, projectName, projectLink})
 {
     return(
@@ -11,7 +12,9 @@ function ProjectPreview({projectImage, projectName, projectLink})
                     <h3>{projectName}</h3>
                     <a className="projectLink" href={projectLink}>{projectLink}</a>
                 </div>
-                <button className="siteButton">Ver detalles</button>
+                <a href="/Projects" id="ProjectDetails">
+                    <button className="siteButton">Ver detalles</button>
+                </a>
             </div>
         </div>
     );

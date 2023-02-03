@@ -164,6 +164,132 @@
 {
   margin-top: 25%;
 }
+.desktop
+{
+  display: none;
+}
+.mobile
+{
+  display: block;
+}
+
+@media(min-width: 501px)
+{
+  .homePage
+  {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Information
+  {
+    width: 55%;
+  }
+  .CertificatesCarr
+  {
+    padding-right: 5%;
+    margin-top: 5%;
+    width: 40%;
+  }
+  .CertifTitle
+  {
+    margin-bottom: 10%;
+  }
+  .ProjectsPreview
+  {
+    width: 100%;
+  }
+  .mobile
+  {
+    display: none;
+  }
+  .desktop
+  {
+    display: block;
+  }
+  .navBar
+  {
+    display: none;
+  }
+  .headerInfo
+  {
+    justify-content: space-between;
+    padding: 0.5% 5%;
+  }
+  .nameAndPic
+  {
+    justify-content: space-evenly;
+    padding: 0;
+    width: 30%;
+  }
+  .headerImage
+  {
+    width: 18%;
+    padding: 1% 0;
+  }
+  .ContactHeader
+  {
+    width: 45%;
+  }
+  .contactIcon
+  {
+    padding: 0;
+    padding-top: 7%;
+    width: 15%;
+  }
+  #Contact h2
+  {
+    color: gray ;
+    padding-top: 7%;
+    padding-left: 10%;
+  }
+  #Contact
+  {
+    width: 30%;
+    justify-content: space-around;
+    padding: 0;
+  }
+  #Contact img
+  {
+    width: 500%;
+  }
+  .titleText
+  {
+    padding-top: 2%;
+  }
+  .ContactSection
+  {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .ProjectPreview
+  {
+    width: 40%;
+    padding-bottom: 5%;
+  }
+  .contactIcons
+  {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  .ContactHeader
+  {
+    color: black !important;
+  }
+  .arrow
+  {
+    width: 2%;
+  }
+  .ProjectPreview
+  {
+    max-width: 40% !important;
+  }
+}
 
 /* Media Queries */
 @media (max-width: 500px) {

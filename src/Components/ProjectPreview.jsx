@@ -13,7 +13,7 @@ function ProjectPreview({changeRoute, projectImage, projectName, projectLink})
                     <a className="projectLink" href={projectLink}>{projectLink}</a>
                 </div>
                 
-                <button onClick={()=>{changeRoute("Projects")}} className="siteButton">Ver detalles</button>
+                <button onClick={()=>{changeRoute("Projects")}} className="siteButton">Details</button>
             </div>
         </div>
     );

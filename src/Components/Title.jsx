@@ -1,6 +1,6 @@
 function Title({title}) {
     return(
-        <div className="titleComponent">
+        <div className="titleComponent" id={title}>
             <div className="arrow">
                 <img src="/arrow.png" alt="arrow" height="100%" width="100%"/>
             </div>

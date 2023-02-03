@@ -5,12 +5,13 @@ import { Navigation, Autoplay } from "swiper";
 import ProjectPreview from '../Components/ProjectPreview.jsx';
 import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
+import ContactSection from "../Components/ContactSection.jsx";
 
 function AboutMe({changeRoute, projects}) {
 
     return(
 
-        <div className="blackBack">
+        <div className="blackBack homePage">
             <div className="Information">
                 <Title title="Hey there!"/>
 
@@ -49,12 +50,24 @@ function AboutMe({changeRoute, projects}) {
                     And since 2020 I have been working as a freelance developer, you can see some of my previous work on Projects section.
                 </Text>
             </div>
+
+            <div className="CertificatesCarr">
+                <div className="CertifTitle">
+                    <Title title="Certificates"/>
+                </div>
+                <Swiper loop={true} autoplay={{ delay: 4000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
+                        <SwiperSlide >
+                            <h1>CS50 Introduction to CS</h1>
+                        </SwiperSlide>
+                </Swiper>
+
+            </div>
             
             <div className="ProjectsPreview">
 
                 <Title title="Projects"/>
                     
-                <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
+                <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper projectsSwiper">
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 
@@ -68,27 +81,10 @@ function AboutMe({changeRoute, projects}) {
                 </Swiper>
                 
             </div>
-
-            <div className="ContactPreview">
-                <Title title="Contact"/>
-
-                <div className="contactIcons">
-                    <a href="https://www.linkedin.com/in/frank-p%C3%A9rez-fleita-480153212/" className="contactIcon">
-                        <img height="100%" width="100%" src="LinkedIn.png" alt="" />
-                    </a>
-                    <a href="https://github.com/frankperez-github" className="contactIcon">
-                        <img height="100%" width="100%" src="Github.png" alt="" />
-                    </a>
-                    <a href="https://wa.me/+5353103058" className="contactIcon">
-                        <img height="100%" width="100%" src="WhatsApp.png" alt="" />
-                    </a>
-                    <a href="mailto:fp848584@gmail.com" className="contactIcon">
-                        <img height="100%" width="100%" src="Mail.png" alt="" />
-                    </a>
-                    <a href="https://t.me/frankperez24" className="contactIcon">
-                        <img height="100%" width="100%" src="Telegram.png" alt="" />
-                    </a>
-                </div>
+            
+            {/* Contact Section (Visible only in mobile mode)*/}
+            <div className="mobile">
+                <ContactSection />
             </div>
 
         </div>

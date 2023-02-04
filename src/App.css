@@ -8,7 +8,11 @@
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
+a
+{
+  text-decoration: none;
+  color: gray;
+}
 .skills
 {
   display: flex;
@@ -196,6 +200,21 @@
   {
     margin-bottom: 10%;
   }
+  .certificatePreview
+  {
+    width: 80%;
+    padding-left: 10%;
+  }
+  .certificatePreview h3{
+    padding-bottom: 5%;
+    padding-left: 3%;
+  }
+  .certifButton
+  {
+    margin-left: 70%;
+    margin-top: 2%;
+    padding: 1% 0;
+  }
   .ProjectsPreview
   {
     width: 100%;
@@ -288,6 +307,58 @@
   .ProjectPreview
   {
     max-width: 40% !important;
+  }
+  .Certificates
+  {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5% 5% 5%;
+  }
+  #Certificates
+  {
+    padding: 0;
+    padding-bottom: 5%;
+  }
+  .Detailed
+  {
+    width: 50%;
+  }
+  .otherCertificates
+  {
+    width: 50%;
+    padding-top: 8%;
+  }
+  .otherCertificates a
+  {
+    text-decoration: underline;
+  }
+  #Go_back_to_home
+  {
+    padding: 0;
+  }
+  .certifsList{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .certificate{
+    padding-top: 3%;
+    width: 45%;
+  }
+  .certificate p
+  {
+    margin-top: 2%;
+  }
+  .certificate h3
+  {
+    margin: 2% 0;
+  }
+  .certificate button
+  {
+    width: 30%;
+    padding: 1% 0;
+    margin-top: 5%;
   }
 }
 

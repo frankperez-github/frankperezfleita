@@ -24,7 +24,7 @@ function Projects({projects})
                             </div>
                             
                             <div className="projectImage">
-                                <img src={project.Image} alt="project image" height="100%" width="100%"/>
+                                <img src={project.Image} alt="project" height="100%" width="100%"/>
                             </div>
                         </div>
 
@@ -39,7 +39,7 @@ function Projects({projects})
                             (
                                 <SwiperSlide key={img.id}>
                                     <div className="projectDetailsImage">
-                                        <img src={img.path} alt="project image" height="100%" width="100%"/>
+                                        <img src={img.path} alt="project" height="100%" width="100%"/>
                                     </div>
                                 </SwiperSlide>
                             ))}

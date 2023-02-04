@@ -18,8 +18,10 @@ function Header({route, changeRoute})
                     </div>
 
                     <div className="nameAndTitle">
-                        <h1>Frank Pérez Fleita</h1>
-                        <p>/ web developer</p>
+                        <a href="/" className="backToHome">
+                            <h1>Frank Pérez Fleita</h1>
+                            <p>/ web developer</p>
+                        </a>
                     </div>
                 </div>
 

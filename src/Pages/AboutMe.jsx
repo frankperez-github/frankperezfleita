@@ -7,7 +7,7 @@ import Text from '../Components/Text.jsx';
 import Title from '../Components/Title.jsx'
 import ContactSection from "../Components/ContactSection.jsx";
 
-function AboutMe({changeRoute, projects}) {
+function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
 
     return(
 
@@ -56,9 +56,15 @@ function AboutMe({changeRoute, projects}) {
                     <Title title="Certificates"/>
                 </div>
                 <Swiper loop={true} autoplay={{ delay: 4000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper">
-                        <SwiperSlide >
-                            <h1>CS50 Introduction to CS</h1>
-                        </SwiperSlide>
+                        {certificates.map((certificate)=>(
+                            <SwiperSlide key={certificate.id}>
+                                <div className="certificatePreview">
+                                    <h3>{certificate.name}</h3>
+                                    <img src={certificate.image} alt="alt" height="100%" width="100%" />
+                                    <button onClick={()=>{changeRoute("Certificates"); SetPrincipal(certificate.id)}} className="siteButton certifButton">Details</button>
+                                </div>
+                            </SwiperSlide>
+                        ))}  
                 </Swiper>
 
             </div>

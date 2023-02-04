@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import AboutMe from './pages/AboutMe.jsx'
+import Certificates from './pages/Certificates';
 import Projects from './pages/Projects.jsx'
 
 
@@ -102,15 +103,43 @@ function App() {
     ]
     }
   ] 
+  const certificates =[
+    {
+      id: 1,
+      name: "Adrian Valdes' CS50 Certif.",
+      description: "Is temporal, I promess",
+      image: "AdrianCS50.jpg"
+    },
+    {
+      id: 2,
+      name: "Adrian Valdes' CS50 Certif.",
+      description: "Is temporal, I promess",
+      image: "AdrianCS50.jpg"
+    },
+    {
+      id: 3,
+      name: "Adrian Valdes' CS50 Certif.",
+      description: "Is temporal, I promess",
+      image: "AdrianCS50.jpg"
+    }
+  ]
+  var principalId = -1;
+  function setPrincipalCertif(principalID)
+  {
+    principalId = principalID;
+  }
 
   return (
     <div>
-        <Header route={route}changeRoute={changeRoute}/>
+        <Header route={route} changeRoute={changeRoute}/>
         {
-         route=="About" && <AboutMe id="AboutComponent" changeRoute={changeRoute}projects={projects}/>
+         route==="About" && <AboutMe id="AboutComponent" SetPrincipal={setPrincipalCertif} changeRoute={changeRoute} projects={projects} certificates={certificates}/>
         }
         {
-          route=="Projects" && <Projects id="ProjectsComponent" projects={projects}/>
+          route==="Projects" && <Projects id="ProjectsComponent" projects={projects}/>
+        }
+        {
+          route==="Certificates" && <Certificates certificates={certificates} principalID={principalId}/>
         }
     </div>
   );

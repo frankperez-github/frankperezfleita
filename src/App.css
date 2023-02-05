@@ -13,6 +13,7 @@ a
   text-decoration: none;
   color: gray;
 }
+
 .skills
 {
   display: flex;
@@ -34,11 +35,12 @@ a
 }
 .headerImage
 {
-  width: 12%;
-
+  width: 17%;
+  padding-right: 3%;
 }
 .nameAndTitle
 {
+  width: 85%;
   margin-top: -1%;
 }
 
@@ -144,6 +146,7 @@ a
 
 .siteButton
 {
+  height: 35px;
   color: #80C8E1;
   border-color: #80C8E1;
   background-color: rgba(255, 255, 255, 0);
@@ -185,6 +188,12 @@ a
 {
   padding: 3% 0;
 }
+.projectDetailsImage
+{
+  width: 70%;
+  padding: 0 5%;
+}
+
 
 @media(min-width: 501px)
 {
@@ -512,15 +521,15 @@ a
 
 @media (max-width: 420px) {
   h1{
-    font-size: 25px;
+    font-size: 23px;
   }
   h2
   {
-    font-size: 20px;
+    font-size: 19px;
   }
   h3
   {
-    font-size: 17px;
+    font-size: 16px;
   }
   p, a, button
   {

@@ -107,21 +107,21 @@ function App() {
     {
       id: 1,
       name: "Adrian Valdes' CS50 Certif. ",
-      description: "Is temporal, I promess",
+      description: "It's temporal Adrian, I promise.",
       image: "AdrianCS50.jpg",
       link: "www.google.com"
     },
     {
       id: 2,
       name: "Adrian Valdes' CS50 Certif. 2.0",
-      description: "Is temporal, I promess",
+      description: "It's temporal Adrian, I promise.",
       image: "AdrianCS50.jpg",
       link: "www.google.com"
     },
     {
       id: 3,
       name: "Adrian Valdes' CS50 Certif. 3.0",
-      description: "Is temporal, I promess",
+      description: "It's temporal Adrian, I promise.",
       image: "AdrianCS50.jpg",
       link: "www.google.com"
     }

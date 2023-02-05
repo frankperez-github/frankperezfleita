@@ -8,7 +8,7 @@ import Title from '../Components/Title.jsx'
 import ContactSection from "../Components/ContactSection.jsx";
 
 function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
-
+   
     return(
 
         <div className="blackBack homePage">
@@ -73,7 +73,7 @@ function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
 
                 <Title title="Projects"/>
                     
-                <Swiper loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper projectsSwiper">
+                <Swiper slidesPerView={window.innerWidth<=500 ? 1 : 2} loop={true} autoplay={{ delay: 5000 }} modules={[Navigation, Autoplay]} navigation={true} className="mySwiper projectsSwiper">
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
                             <ProjectPreview 
@@ -85,7 +85,6 @@ function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                
             </div>
             
             {/* Contact Section (Visible only in mobile mode)*/}

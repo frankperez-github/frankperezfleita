@@ -11,22 +11,26 @@ function Certificates({certificates, principalID})
     },[certificates, principalID])
     return(
         <div className="Certificates blackBack">
-            <div className="Detailed desktop">
-                <Title title="Certificates"/>
-                
-                <div className="principal">
-                    <h1>{principal.name}</h1>
-                    <div className="principalImage">
-                        <img src={principal.image} alt="" />
+            {window.innerWidth > 500 &&
+                <div className="Detailed desktop">
+                    <Title title="Certificates"/>
+                    
+                    <div className="principal">
+                        <h1>{principal.name}</h1>
+                        <div className="principalImage">
+                            <img src={principal.image} alt="" />
+                        </div>
+                        <p>{principal.description}</p>
                     </div>
-                    <p>{principal.description}</p>
-                </div>
 
-            </div>
+                </div>
+            }
             <div className="otherCertificates">
-                <a href="/">
-                    <Title title="Go_back_to_home"/>
-                </a>
+                {window.innerWidth > 500 &&
+                    <a href="/">
+                        <Title title="Go_back_to_home"/>
+                    </a>
+                }
                 <div className="certifsList">
                     {certificates.map((certificate)=>(
                         <Certificate setPrincipal={setPrincipal} key={certificate.id} certificate={certificate}/>

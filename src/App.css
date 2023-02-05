@@ -402,6 +402,10 @@ a
     width: 90%;
     padding: 3% 0;
   }
+  .principal p
+  {
+    width: 90%;
+  }
   .titleComponent
   {
     padding-top: 2%;

@@ -107,7 +107,7 @@ function App() {
     {
       id: 1,
       name: "CS50: Introduction to Computer Science",
-      description: "It's temporal Adrian, I promise.",
+      description: "CS50 is a free online course offered by Harvard University that provides an introduction to the field of computer science. It covers topics such as algorithms, programming languages (e.g. C, Python), web development, and databases. The course provides a challenging curriculum for experienced students. It emphasizes hands-on experience and problem-solving through coding projects and assignments. The course is available on the edX platform and can be taken at one's own pace.",
       image: "CS50x.png",
       link: "https://cs50.harvard.edu/certificates/07e6354d-e944-48dd-bbea-a694fff9165f"
     }

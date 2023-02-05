@@ -189,23 +189,24 @@ a
 @media(min-width: 501px)
 {
   h1{
-    font-size: 20px;
+    font-size: 27px;
   }
   h2
   {
-    font-size: 17px;
+    font-size: 20px;
   }
   h3
   {
-    font-size: 14px;
+    font-size: 20px;
+    padding: 0;
   }
   p, a, button
   {
-    font-size: 10px;
+    font-size: 15px;
   }
   button
   {
-    font-size: 10px;
+    font-size: 15px;
   }
   .homePage
   {
@@ -314,6 +315,8 @@ a
   .ProjectPreview
   {
     width: 40%;
+    margin-top: 0;
+    margin-left: 12%;
     padding-bottom: 5%;
   }
   .contactIcons

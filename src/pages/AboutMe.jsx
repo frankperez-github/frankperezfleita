@@ -51,7 +51,7 @@ function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
                 </Text>
             </div>
 
-            <div className="CertificatesCarr">
+            <div className="CertificatesCarr desktop">
                 <div className="CertifTitle">
                     <Title title="Certificates"/>
                 </div>

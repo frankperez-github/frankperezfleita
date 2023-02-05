@@ -18,6 +18,28 @@ function App() {
   const projects = [
     {
       id: 1,
+      Image: "enfasismagImages/main.png",
+      Name: "Énfasis Magazine",
+      Link: "https://enfasismag.com",
+      
+      Description:[
+        "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
+      ],
+      
+      Images:[
+        { id:1,
+          path:"enfasismagImages/1.png"
+        },
+        { id:2,
+          path:"enfasismagImages/2.png"
+        },
+        { id:3,
+          path:"enfasismagImages/3.png"
+        },
+      ]
+    },
+    {
+      id: 2,
       Image: "elencantoImages/main.png",
       Name: "El Encanto Liquidation",
       Link: "https://elencantoliquidation.com",
@@ -37,47 +59,25 @@ function App() {
       ]
     },
     {
-        id: 2,
-        Image: "enfasismagImages/main.png",
-        Name: "Énfasis Magazine",
-        Link: "https://enfasismag.com",
-        
-        Description:[
-          "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
-        ],
-
-        Images:[
-          { id:1,
-            path:"enfasismagImages/main.png"
-          },
-          { id:2,
-            path:"enfasismagImages/main.png"
-          },
-          { id:3,
-            path:"enfasismagImages/main.png"
-          },
-        ]
-    },
-    {
       id: 3,
       Image: "connectravelImages/main.png",
       Name: "Connect Travel",
       Link: "https://connectravel.us",
       
       Description:[
-        "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
+        "Connect Travel is a travel reservation business located in Miami, offering customers a wide range of travel options to suit their needs. We specialize in booking flights for customers, but also offer a variety of other travel services, such as hotel reservations, car rentals, and vacation packages.",
       ],
 
       Images:[
         { id:1,
-          path:"connectravelImages/main.png"
+          path:"connectravelImages/1.png"
         },
         { id:2,
-          path:"connectravelImages/main.png"
+          path:"connectravelImages/2.png"
         },
         { id:3,
-          path:"connectravelImages/main.png"
-        },
+          path:"connectravelImages/3.png"
+        }
       ]
     },
     {
@@ -87,18 +87,18 @@ function App() {
     Link: "https://seahorse-jetski.vercel.app",
     
     Description:[
-      "Blog site for the Enfasis Group, a magazine that focuses on supporting the work of Cuban artists and architects. Features on the website include subscribing to a mailing list, magazine PDFs download and a flexible article creation tool for the editors.",
+      "Sea Horse Jet Ski is a watercraft rental business located in Miami, offering customers the thrill and excitement of riding on a jet ski. With their fleet of top-of-the-line jet skis, customers can explore the beautiful Miami coastline and participate in a variety of water sports activities. Promotional website to Sea Horse Enterprise. Includes reviews form, and public record of reviews."
     ],
 
     Images:[
       { id:1,
-        path:"seahorseImages/main.png"
+        path:"seahorseImages/1.png"
       },
       { id:2,
-        path:"seahorseImages/main.png"
+        path:"seahorseImages/2.png"
       },
       { id:3,
-        path:"seahorseImages/main.png"
+        path:"seahorseImages/3.png"
       },
     ]
     }

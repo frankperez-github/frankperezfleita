@@ -36,7 +36,7 @@ a
 .headerImage
 {
   width: 17%;
-  padding-right: 3%;
+  padding-right: 5%;
 }
 .nameAndTitle
 {
@@ -283,7 +283,7 @@ a
   .headerImage
   {
     width: 18%;
-    padding: 1% 0;
+    padding: 1% 5%;
   }
   .ContactHeader
   {
@@ -499,19 +499,19 @@ a
 }
 @media (max-width: 500px) {
   h1{
-    font-size: 30px;
+    font-size: 20px;
   }
   h2
   {
-    font-size: 25px;
+    font-size: 19px;
   }
   h3
   {
-    font-size: 22px;
+    font-size: 19px;
   }
   p, a, button
   {
-    font-size: 16px;
+    font-size: 15px;
   }
   button
   {
@@ -521,7 +521,7 @@ a
 
 @media (max-width: 420px) {
   h1{
-    font-size: 23px;
+    font-size: 20px;
   }
   h2
   {

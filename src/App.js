@@ -106,24 +106,10 @@ function App() {
   const certificates =[
     {
       id: 1,
-      name: "Adrian Valdes' CS50 Certif. ",
+      name: "CS50: Introduction to Computer Science",
       description: "It's temporal Adrian, I promise.",
-      image: "AdrianCS50.jpg",
-      link: "www.google.com"
-    },
-    {
-      id: 2,
-      name: "Adrian Valdes' CS50 Certif. 2.0",
-      description: "It's temporal Adrian, I promise.",
-      image: "AdrianCS50.jpg",
-      link: "www.google.com"
-    },
-    {
-      id: 3,
-      name: "Adrian Valdes' CS50 Certif. 3.0",
-      description: "It's temporal Adrian, I promise.",
-      image: "AdrianCS50.jpg",
-      link: "www.google.com"
+      image: "CS50x.png",
+      link: "https://cs50.harvard.edu/certificates/07e6354d-e944-48dd-bbea-a694fff9165f"
     }
   ]
 

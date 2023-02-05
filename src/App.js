@@ -106,34 +106,34 @@ function App() {
   const certificates =[
     {
       id: 1,
-      name: "Adrian Valdes' CS50 Certif.",
+      name: "Adrian Valdes' CS50 Certif. ",
       description: "Is temporal, I promess",
-      image: "AdrianCS50.jpg"
+      image: "AdrianCS50.jpg",
+      link: "www.google.com"
     },
     {
       id: 2,
-      name: "Adrian Valdes' CS50 Certif.",
+      name: "Adrian Valdes' CS50 Certif. 2.0",
       description: "Is temporal, I promess",
-      image: "AdrianCS50.jpg"
+      image: "AdrianCS50.jpg",
+      link: "www.google.com"
     },
     {
       id: 3,
-      name: "Adrian Valdes' CS50 Certif.",
+      name: "Adrian Valdes' CS50 Certif. 3.0",
       description: "Is temporal, I promess",
-      image: "AdrianCS50.jpg"
+      image: "AdrianCS50.jpg",
+      link: "www.google.com"
     }
   ]
-  var principalId = -1;
-  function setPrincipalCertif(principalID)
-  {
-    principalId = principalID;
-  }
+
+  const [principalId, setPrincipalId] = useState(-1);
 
   return (
     <div>
         <Header route={route} changeRoute={changeRoute}/>
         {
-         route==="About" && <AboutMe id="AboutComponent" SetPrincipal={setPrincipalCertif} changeRoute={changeRoute} projects={projects} certificates={certificates}/>
+         route==="About" && <AboutMe id="AboutComponent" SetPrincipal={setPrincipalId} changeRoute={changeRoute} projects={projects} certificates={certificates}/>
         }
         {
           route==="Projects" && <Projects id="ProjectsComponent" projects={projects}/>

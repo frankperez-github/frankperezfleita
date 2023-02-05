@@ -10,13 +10,13 @@ function Projects({projects})
     return(
         <div className="blackBack">
             <Title title="Projects"/>
-            <Swiper loop={true} autoplay={{ delay: 20000 }} navigation={true} modules={[Navigation, Autoplay]} className="mySwiper">
+            <Swiper loop={true} autoplay={{ delay: 20000 }} navigation={true} modules={[Navigation, Autoplay]} className="mySwiper projectsSwiper">
                 
                 {projects.map ((project)=>
                 (
                     <SwiperSlide key={project.id}>
                         <div className="ProjectPreview detailedProject">
-                            <div className="projectFoot">
+                            <div className="projecFoot">
                                 <div className="projectname">
                                     <h3>{project.Name}</h3>
                                     <a className="projectLink" href={project.Link}>{project.Link}</a>

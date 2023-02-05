@@ -1,13 +1,14 @@
-import Title from "./Title";
 
-function Certificate({certificate})
+function Certificate({certificate, setPrincipal})
 {
     return(
-        <div className="certificate">
+        <div className="certificate" onClick={()=>setPrincipal(certificate)}>
             <h3>{certificate.name}</h3>
             <img src={certificate.image} alt="certificate" width="100%"/>
             <p>{certificate.description}</p>
-            <button className="siteButton">Visit</button>
+            <a href={certificate.link} className="siteButton">
+                <button className="siteButton">Visit</button>
+            </a>
         </div>
     );
 }

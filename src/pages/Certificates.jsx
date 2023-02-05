@@ -1,31 +1,27 @@
+import { useState, useEffect } from "react";
 import Certificate from "../Components/Certificate";
 import Title from "../Components/Title";
 
-function Certificates({certificates, principalId})
+function Certificates({certificates, principalID})
 {
-    var principalID = principalId;
-    var principal = certificates[0];
-    console.log(principalId);
-    function SetPrincipal(certf)
+    const[principal, setPrincipal] = useState({});
+    useEffect(()=>
     {
-        if(certf.id === principalId)
-        {
-            principalID = principalId
-            console.log(principalID);
-
-            // console.log(id);
-            principal = certf;
-        }
-    }
-
+        setPrincipal(certificates[principalID-1]);
+    },[certificates, principalID])
     return(
         <div className="Certificates blackBack">
-            <div className="Detailed">
+            <div className="Detailed desktop">
                 <Title title="Certificates"/>
-                {certificates.map((certificate)=>(
-                    SetPrincipal(certificate)
-                ))}
-                {/* <h1>{principal.id}</h1> */}
+                
+                <div className="principal">
+                    <h1>{principal.name}</h1>
+                    <div className="principalImage">
+                        <img src={principal.image} alt="" />
+                    </div>
+                    <p>{principal.description}</p>
+                </div>
+
             </div>
             <div className="otherCertificates">
                 <a href="/">
@@ -33,7 +29,7 @@ function Certificates({certificates, principalId})
                 </a>
                 <div className="certifsList">
                     {certificates.map((certificate)=>(
-                        <Certificate key={certificate.id} certificate={certificate}/>
+                        <Certificate setPrincipal={setPrincipal} key={certificate.id} certificate={certificate}/>
                     ))}
                 </div>
             </div>

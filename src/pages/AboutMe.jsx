@@ -37,7 +37,7 @@ function AboutMe({changeRoute, projects, certificates, SetPrincipal}) {
                             * FireBase
                         </p>
                         <p className="skill">
-                            * Otras cosillas
+                            * Vercel
                         </p>
                     </div>
                 <Text>

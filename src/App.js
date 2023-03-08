@@ -42,7 +42,7 @@ function App() {
       id: 2,
       Image: "elencantoImages/main.png",
       Name: "El Encanto Liquidation",
-      Link: "https://elencantoliquidation.com",
+      Link: "https://el-encanto.vercel.app",
       
       
       Description:[
@@ -54,7 +54,13 @@ function App() {
           path:"elencantoImages/main.png"
         },
         { id:2,
-          path:"elencantoImages/main.png"
+          path:"elencantoImages/1.png"
+        },
+        { id:3,
+          path:"elencantoImages/2.png"
+        },
+        { id:4,
+          path:"elencantoImages/3.png"
         }
       ]
     },
@@ -101,7 +107,29 @@ function App() {
         path:"seahorseImages/3.png"
       },
     ]
-    }
+    },
+    {
+      id: 5,
+      Image: "elBisneImages/main.jpg",
+      Name: "El Bisne",
+      Link: "https://el-bisne.vercel.app",
+      
+      Description:[
+        "\"El bisne\" is a classified announcements website. It was implemented using NextJS. It presents a search among the announcements and a filter of products/services according to their category, it is a project that is constantly updated to improve its operation, design and make it closer to the user"
+      ],
+  
+      Images:[
+        { id:1,
+          path:"elBisneImages/1.jpg"
+        },
+        { id:2,
+          path:"elBisneImages/2.jpg"
+        },
+        { id:3,
+          path:"elBisneImages/3.jpg"
+        },
+      ]
+      }
   ] 
   const certificates =[
     {
